@@ -8,6 +8,4 @@
  */
 
  int main (void)
- {
-	 gcc -c $CFILE > 1-compiler.o
- }
+ {gcc -c $CFILE > 1-compiler.o}
