@@ -1,11 +1,5 @@
 #!/bin/bash
-# include <stdio.h>
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+# include <stdio.h
 
  int main (void)
  {gcc -c $CFILE > 1-compiler.o}
