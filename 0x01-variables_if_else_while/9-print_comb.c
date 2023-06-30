@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - print combination of single digit
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
 	int i;
@@ -17,5 +23,5 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
