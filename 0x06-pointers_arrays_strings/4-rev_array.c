@@ -3,7 +3,7 @@
 
 /**
  * reverse_array - reverse array of integers
- * @a:first pointer
+ * @a: first pointer
  * @n: integer
  *
  * Return: 0
