@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - to concatenate two strings
+ * *_strncat - to concatenate two strings
  * @dest: destination variable
  * @src: sorce variable
  * @n: is the integer
@@ -21,6 +21,6 @@ char *_strncat(char *dest, char *src, int n)
 		ptr++;
 		src++;
 		n--; }
-	putchar('\n');
+	*ptr = '\0';
 	return (dest);
 }
