@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - base of ten
+ * main - print all single digit numbers
  *
  * Retrun: 0
  */
