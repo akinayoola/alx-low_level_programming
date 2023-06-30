@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - function 
+ * main - print lowercase alphabets
  *
  * Return: 0
  */
 
-int main ()
+int main (void)
 {
 	char i;
 
 	if (i = 'a'; i <= 'z'; i++)
 	{
+
 		putchar(i); }
 	putchar('\n');
+
 	return (0);
 }
