@@ -9,9 +9,9 @@
 
 int print_last_digit(int b)
 {
-	if (b % 10 < 0)
-	{
-	_putchar(b); }
+	int last_digit = number % 10;
 
-	return (0);
+	printf("The last digit is: %d\n", last_digit);
+
+	return (last_digit);
 }
