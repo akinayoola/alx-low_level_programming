@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * *_strdup - prototype for  function that returns a pointer to a newly allocated space in memory
- * @str: string variable 
+ * *_strdup - prototype for  function that returns a pointer to a new space
+ * @str: string variable
  *
  * Return: 0
  */
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{ return (NULL);
 	}
 	length = strlen(str);
-	copy = (char*)malloc((length + 1) * sizeof(char));
+	copy = (char *)malloc((length + 1) * sizeof(char));
 
 
 	if (copy == NULL)
