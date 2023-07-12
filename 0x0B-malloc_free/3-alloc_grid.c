@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_grid - returns a pointer to a 2 dimensional array of integers
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers
  * @width: width of array
  * @height: height of arrray
  *
@@ -33,9 +33,9 @@ int **alloc_grid(int width, int height)
 		{
 			for (j = 0; j < width; j++)
 			{
-				free (grid[j]);
+				free(grid[j]);
 			}
-			free (grid);
+			free(grid);
 			return (NULL);
 
 			for (j = 0; j < width; j++)
