@@ -9,7 +9,7 @@
  * @s2: source string
  * @n: integer variable
  *
- * Result: 0
+ * Return: 0
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	strncpy(result, s1, len1);
 	strncat(result + len1, s2, n);
-	result[len1 +n] = '\0';
+	result[len1 + n] = '\0';
 
 	return (result);
 }
