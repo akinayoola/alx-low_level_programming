@@ -20,11 +20,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		return ("");
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return ("");
+		s2 = "";
 	}
 	len1 = strlen(s1);
 	len2 = strlen(s2);
@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	strcpy(result, s1);
 	strncat(result, s2, n);
-	result[len1 + n + 1] = '\0';
+	result[len1 + n] = '\0';
 
 	return (result);
 }
