@@ -13,7 +13,8 @@
 void *malloc_checked(unsigned int b)
 {
 	void *mtc = malloc(b);
-			if (mtc == NULL)
+
+	if (mtc == NULL)
 	{
 		printf("malloc failed\n");
 		exit(98);
