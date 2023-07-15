@@ -7,7 +7,8 @@
  * _realloc - reallocates a memory block using malloc and free
  * @new_size: size of new memory
  * @old_size: size of o;d memoru
- *
+ * @ptr: read length of string
+*
  * Return: 0
  */
 
