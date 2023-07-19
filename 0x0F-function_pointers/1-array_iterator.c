@@ -8,7 +8,7 @@
  * @size: size of the array
  * @action: function to call
  *
- * Return: 0
+ * Return: void
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -21,4 +21,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 			action(array[x]);
 	}
+	if (array || action || size)
+		exit(EXIT_FAILURE);
 }
