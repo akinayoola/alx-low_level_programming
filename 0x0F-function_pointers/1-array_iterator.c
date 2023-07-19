@@ -21,6 +21,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 			action(array[x]);
 	}
-	if (array || action || size)
+	if (array || action || size == 0)
 		exit(EXIT_FAILURE);
 }
