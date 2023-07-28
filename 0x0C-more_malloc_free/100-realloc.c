@@ -1,52 +1,48 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _realloc - reallocates a memory block using malloc and free
- * @new_size: size of new memory
- * @old_size: size of o;d memoru
- * @ptr: read length of string
-*
- * Return: 0
- */
+ * _realloc - reallocate a memory block using malloc and free
+ *
+ * @ptr: pointer to previous memory
+ * @old_size: old memory array size
+ * @new_size: new memory array size
+ *
+ * Return: pointer to new memory
+ *         NULL if it fails
+*/
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *new_ptr;
-	unsigned int copy_size;
+	char *new_ptr, *temp_ptr;
+	unsigned int i;
 
-	if (new_size == 0)
+	if (new_size == old_size)
+		return (ptr);
+
+	if (ptr == NULL)
+	{
+		new_ptr = malloc(new_size);
+		if (new_ptr == NULL)
+			return (NULL);
+		free(ptr);
+		return (new_ptr);
+	}
+
+	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
 
-	if (ptr == NULL)
-	{
-		return (malloc(new_size));
-	}
-
-	if (new_size == old_size)
-	{
-		return (ptr);
-	}
-
 	new_ptr = malloc(new_size);
 	if (new_ptr == NULL)
-	{
 		return (NULL);
-	}
 
-	copy_size = old_size;
-	if (new_size > old_size)
-	{
-		copy_size = new_size;
-	}
+	temp_ptr = ptr;
 
-	memcpy(new_ptr, ptr, copy_size);
+	for (i = 0; i < old_size; i++)
+		new_ptr[i] = temp_ptr[i];
+
 	free(ptr);
-
 	return (new_ptr);
 }
