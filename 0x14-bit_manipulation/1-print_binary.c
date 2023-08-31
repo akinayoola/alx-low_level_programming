@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	}
 	len -= 1;
 
-	if (len > 0) 
+	if (len > 0)
 		mask = mask << len;
 
 	while (mask > 0)
